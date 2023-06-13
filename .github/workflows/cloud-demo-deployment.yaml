@@ -38,12 +38,12 @@ jobs:
           cache-dependency-path: "requirements*.txt"
       
       - name: Install packages
-        run:
-          python3 -m pip install --upgrade pip
+        run: |
+          python -m pip install --upgrade pip
           pip install --upgrade -upgrade-strategy eager -r requirements.txt
 
       - name: Build and apply deployment
-        run:
+        run: |
           prefect deployment build ./test.py:demo1 \
             --name "Demo actions deployment" \
             --storage-block github/youtube-data-repo \
