@@ -10,7 +10,7 @@ def test1():
 
 @flow
 def demo2():
-    demo_number = 2
+    demo_number = 3
     return(demo_number)
 
 @flow
