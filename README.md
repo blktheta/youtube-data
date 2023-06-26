@@ -3,7 +3,7 @@ The goal is to create a robust automated infrastructure system using modern open
 
 #### Expected tools to be used in the project.
 | Stage | Tool |
-| :--- | --- |
+| :--- | :---: |
 | Infrastructure | Terraform/Docker |
 | Orchetration | Prefect |
 | Extract & Load | Python |
