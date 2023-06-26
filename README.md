@@ -4,14 +4,29 @@ The goal is to create a robust automated infrastructure system using modern open
 #### Expected tools to be used in the project.
 | Stage | Tool |
 | :--- | --- |
-| Infrastructure | Terraform |
+| Infrastructure | Terraform/Docker |
 | Orchetration | Prefect |
 | Extract & Load | Python |
-| Transformation | Data Build Tool |
-| Warehouse | ? (Google) |
-| CI/CD | Github/? (Google) |  
+| Transformation | Data Build Tool (DBT) |
+| Warehouse | Google BigQuery |
+| CI/CD | Github Actions/Google Cloud Run |  
 
 #### Current planning 
 - [x] implement Prefect storage with Github version control
-- [ ] implement Github actions
-- [ ] research infrastructure application
+- [ ] implement Python CI with Github Actions
+    - [ ] inlcude Linting checks
+    - [ ] inlcude Python tests
+    - [ ] deploy flows
+- [ ] implement Google Cloud Run blocks in Prefect
+    - [ ] set up credentials
+    - [ ] set up container GCP Artifact Registry/Docker
+- [ ] store data in BigQuery
+    - [ ] design All-in-One database
+    - [ ] use hybrid data modeling approach with Star shema and OBT
+- [ ] implement DBT CI wih Github actions
+    - [ ] clone DBT repo
+    - [ ] include tests
+    - [ ] run models
+- [ ] cost/performance analysis
+- [ ] ...
+
