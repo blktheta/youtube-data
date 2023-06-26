@@ -1,5 +1,5 @@
 ### Under progress
-The goal is to create a robust automated infrastructure system using modern open source tools. The stack is subject to change during the initial phase of setting everythong up.
+The goal is to create a robust automated infrastructure system using modern open source tools. The stack is subject to change during the initial phase of setting everything up.
 
 #### Expected tools to be used in the project.
 | Stage | Tool |
