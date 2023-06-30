@@ -1,18 +1,17 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
 name: Python Code Checks
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
-    branches:
-      - main
-      
-  workflow_dispatch:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
 
 jobs:
   python-checks:
-    name: Python Checks
     runs-on: ubuntu-latest
 
     steps:
@@ -36,7 +35,3 @@ jobs:
         run: |
           black --check src/
           mypy --ignore-missing-imports --explicit-package-bases --implicit-optional src/ 
-
-
-
-  
