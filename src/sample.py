@@ -1,2 +1,2 @@
 def square(n: float) -> float:
-    pass
+    return 2.0 * n
