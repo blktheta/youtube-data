@@ -33,7 +33,7 @@ jobs:
       - name: Critical Checks 
         run: |
           black . --check
-          mypy . --ignore-missing-imports --explicit-package-bases --implicit-optional .
+          mypy . --ignore-missing-imports --explicit-package-bases --implicit-optional
 
       - name: Linting Checks
         run: |
