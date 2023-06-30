@@ -1,9 +1,9 @@
-/*
-from prefect import flow, task
-from prefect.blocks.system import String
 
-string_block = String.load("demo-block")
+# from prefect import flow, task
+# from prefect.blocks.system import String
 
+# string_block = String.load("demo-block")
+"""
 @task
 def test1():
     msg = string_block.value
@@ -24,5 +24,4 @@ def demo1():
 
 if __name__ == "__main__":
     demo1()
-
-*/
+"""
