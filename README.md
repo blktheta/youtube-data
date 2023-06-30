@@ -13,7 +13,7 @@ The goal is to create a robust automated infrastructure system using modern open
 
 #### Current planning 
 - [x] implement Prefect storage with Github version control
-- [ ] implement Python CI with Github Actions
+- [x] implement Python CI with Github Actions
     - [x] inlcude Critical checks
     - [x] inlcude Linting checks
     - [x] inlcude Python tests
