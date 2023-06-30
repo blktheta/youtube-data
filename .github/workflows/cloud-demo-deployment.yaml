@@ -7,12 +7,12 @@ env:
   PREFECT_API_URL: ${{ secrets.PREFECT_API_URL }}
 
 on:
-  pull_request:
-    branches:
-      - main
+  #pull_request:
+    #branches:
+      #- main
   # Temp 
-  push:
-    branches:
+  #push:
+    #branches:
       - main
 
 permissions:
