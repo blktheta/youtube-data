@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   build:
-    name: Python Check
+    name: Build and check python files
     runs-on: ubuntu-latest
 
     steps:
