@@ -17,7 +17,7 @@ The goal is to create a robust automated infrastructure system using modern open
     - [x] inlcude Critical checks
     - [x] inlcude Linting checks
     - [x] inlcude Python tests
-- [ ] deploy Prefect flows from Github actions
+- [x] deploy Prefect flows from Github actions
 - [ ] implement Google Cloud Run blocks in Prefect
     - [ ] set up credentials
     - [ ] set up container GCP Artifact Registry/Docker

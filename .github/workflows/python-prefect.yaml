@@ -50,7 +50,7 @@ jobs:
           pytest
 
   deploy:
-    name: Build and apply prefect deployment
+    name: Build and deploy prefect flows
     needs: test
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -78,8 +78,8 @@ jobs:
         run: |
           prefect deployment build ./src/basic_flow.py:basic_flow \
             --name "Demo basic flow" \
-            -sb github/test \
-            -t github \
-            -q githubwq \
-            -v $GITHUB_SHA \
+            --storage-block github/test \
+            --tag github \
+            --work-queue githubwq \
+            --version $GITHUB_SHA \
             --apply 
