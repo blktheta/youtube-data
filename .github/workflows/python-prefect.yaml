@@ -78,8 +78,8 @@ jobs:
         run: |
           prefect deployment build ./src/basic_flow.py:basic_flow \
             --name "Demo basic flow" \
-            --storage-block github/test \
-            --tag github \
-            --work-queue githubwq \
-            --version $GITHUB_SHA \
+            -sb github/test \
+            -t github \
+            -q githubwq \
+            -v $GITHUB_SHA \
             --apply 
