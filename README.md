@@ -30,4 +30,8 @@ The goal is to create a robust automated infrastructure system using modern open
     - [ ] run models
 - [ ] cost/performance analysis
 - [ ] ...
+- [ ] extra: create mutliple data image repos
+    - [ ] repo: Python Docker image for extraction scripts
+    - [ ] repo: Prefect Docker image for deployments
+    - [ ] repo: DBT Docker image for transformation 
 
