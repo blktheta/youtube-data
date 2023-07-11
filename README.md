@@ -19,8 +19,9 @@ The goal is to create a robust automated infrastructure system using modern open
     - [x] inlcude Python tests
 - [x] deploy Prefect flows from Github actions
 - [ ] implement Google Cloud Run blocks in Prefect
-    - [ ] set up credentials
+    - [x] set up credentials
     - [ ] set up container GCP Artifact Registry/Docker
+> Note: Currently investing time in AWS instead. The **gcloud** auth config-docker does not support **docker** installed via Snap, as the **docker** snap package does not currently provide an interface for credential helpers. More about it can be read at https://cloud.google.com/sdk/gcloud/reference/auth/configure-docker.
 - [ ] store data in BigQuery
     - [ ] design All-in-One database
     - [ ] use hybrid data modeling approach with Star shema and OBT
